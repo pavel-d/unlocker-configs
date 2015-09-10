@@ -1,4 +1,3 @@
 dump.csv
-zones.override
-sniproxy.conf
-
+config/sniproxy/sniproxy.conf
+config/bind/zones.override
