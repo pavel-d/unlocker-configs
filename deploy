@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+rm -f dump.csv
+wget https://raw.githubusercontent.com/zapret-info/z-i/master/dump.csv
+./generate_config
+scp sniproxy.conf root@46.101.255.49:/etc/sniproxy.conf
+scp zones.override root@46.101.255.49:/etc/bind/
+
+ssh root@46.101.255.49 "killall -HUP sniproxy"
+ssh root@46.101.255.49 "service bind9 reload"

@@ -1,0 +1,7 @@
+<% @host_names.each do |host_name| %>
+zone "<%= host_name %>" {
+    type master;
+    file "/etc/bind/db.override";
+};
+
+<% end %>
