@@ -1,4 +1,5 @@
 require 'erb'
+require 'yaml'
 
 DYMAMIC_CONFIGS = %w(./config/sniproxy/sniproxy.conf ./config/bind/zones.override)
 
