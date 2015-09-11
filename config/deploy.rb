@@ -6,8 +6,6 @@ set :repository, 'git@github.com:pavel-d/unlocker-proxy.git'
 set :deploy_to, '/srv/unlocker-proxy'
 set :forward_agent, true
 
-DYMAMIC_CONFIGS = %w(config/sniproxy/sniproxy.conf config/bind/zones.override)
-
 task :deploy do
   deploy do
     invoke :'git:clone'
@@ -15,6 +13,7 @@ task :deploy do
     invoke :render_config
     invoke :link_config
     invoke :restart
+    invoke :'deploy:cleanup'
   end
 end
 
@@ -27,8 +26,8 @@ task :render_config do
 end
 
 task :link_config do
-  queue 'ln -s config/sniproxy/* /etc/'
-  queue 'ln -s config/bind/* /etc/bind/'
+  queue 'cp config/sniproxy/* /etc/'
+  queue 'cp config/bind/* /etc/bind/'
 end
 
 task :restart do
