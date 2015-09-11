@@ -12,6 +12,6 @@ Install `mina` locally, `$ gem install mina`
 Make changes to the configuration and run deploy
 `$ mina deploy`
 
-It generate configs for sniproxy and bind9 from fresh dump of forbidden sites [dump](https://github.com/zapret-info/z-i/) and include additional hosts from [config/settings.yml](config/settings.yml)
+It will generate configs for sniproxy and bind9 from fresh [dump](https://github.com/zapret-info/z-i/) of forbidden sites and will include additional hosts from [config/settings.yml](config/settings.yml)
 
 Services won't be restarted if any of deploy steps fail
