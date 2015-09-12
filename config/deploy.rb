@@ -26,11 +26,11 @@ task :render_config do
 end
 
 task :link_config do
-  queue 'cp config/sniproxy/* /etc/'
+  queue 'cp config/smart-proxy/* /etc/smart-proxy'
   queue 'cp config/bind/* /etc/bind/'
 end
 
 task :restart do
-  queue 'killall -HUP sniproxy'
+  queue 'sv smart-proxy restart'
   queue 'service bind9 reload'
 end

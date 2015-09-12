@@ -1,0 +1,11 @@
+listeners:
+  - https: true
+    bind_addr: ":443"
+  - bind_addr: ":80"
+
+frontends:
+<% @host_names.each do |host_name| %>
+  <%= host_name %>:
+    backends:
+      - addr: "<%= host_name %>"
+<% end %>
