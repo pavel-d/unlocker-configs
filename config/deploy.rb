@@ -2,7 +2,7 @@ require 'mina/git'
 
 set :domain, '46.101.255.49'
 set :user, 'root'
-set :repository, 'git@github.com:pavel-d/unlocker-proxy.git'
+set :repository, 'git@github.com:pavel-d/unlocker-configs.git'
 set :deploy_to, '/srv/unlocker-proxy'
 set :forward_agent, true
 
@@ -31,6 +31,6 @@ task :link_config do
 end
 
 task :restart do
-  queue 'sv smart-proxy restart'
+  queue 'sv restart smart-proxy'
   queue 'service bind9 reload'
 end
