@@ -1,5 +1,5 @@
 dump.csv
-config/sniproxy/sniproxy.conf
+config/smart-proxy/settings.yml
 config/bind/zones.override
 # Compiled Object files, Static and Dynamic libs (Shared Objects)
 *.o
