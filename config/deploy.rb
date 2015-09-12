@@ -3,7 +3,7 @@ require 'mina/git'
 set :domain, '46.101.255.49'
 set :user, 'root'
 set :repository, 'git@github.com:pavel-d/unlocker-configs.git'
-set :deploy_to, '/srv/unlocker-proxy'
+set :deploy_to, '/srv/unlocker-configs'
 set :forward_agent, true
 
 task :deploy do
