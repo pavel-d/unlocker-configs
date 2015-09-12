@@ -2,5 +2,6 @@ proxy_hosts:
   - pandora.com
   - rdio.com
   - 2ip.ru
+  - www.2ip.ru
   - www.whatismyip.com
   - www.youtube.com
