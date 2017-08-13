@@ -8,65 +8,19 @@ proxy_hosts:
   - mradx.net
   - 2ch.hk
   - vk.com
+  - vkontakte.ru
+  - userapi.com
+  - kinopoisk.ru
   - ok.ru
+  - ok.com
+  - mycdn.me
   - yandex.ru
   - yandex.ua
-  - avia.yandex.ru
-  - avia.yandex.ua
+  - yandex.net
+  - yandex.st
+  - cldmail.me
+  - yadi.sk
+  - yastatic.net
+  - webvisor.net
   - auto.ru
-  - audience.yandex.ru
-  - audience.yandex.ua
-  - afisha.yandex.ru
-  - afisha.yandex.ua
-  - money.yandex.ru
-  - webmaster.yandex.ru
-  - direct.yandex.ru
-  - direct.yandex.ua
-  - disk.yandex.ru
-  - disk.yandex.ua
-  - delivery.yandex.ru
-  - calendar.yandex.ru
-  - kassa.yandex.ru
   - kinopoisk.ru
-  - market.yandex.ru
-  - market.yandex.ua
-  - metrika.yandex.ru
-  - metrika.yandex.ua
-  - metro.yandex.ru
-  - metro.yandex.ua
-  - music.yandex.ua
-  - music.yandex.ua
-  - n.maps.yandex.ru
-  - realty.yandex.ru
-  - news.yandex.ru
-  - news.yandex.ua
-  - translate.yandex.ru
-  - translate.yandex.ua
-  - site.yandex.ua
-  - mail.yandex.ua
-  - mail.yandex.ua
-  - pdd.yandex.ru
-  - travel.yandex.ru
-  - rabota.yandex.ru
-  - rabota.yandex.ua
-  - radio.yandex.ua
-  - rasp.yandex.ru
-  - rasp.yandex.ua
-  - stat.yandex.ru
-  - stat.yandex.ua
-  - taxi.yandex.ru
-  - tv.yandex.ru
-  - tv.yandex.ua
-  - telephony.yandex.ru
-  - tech.yandex.ru
-  - fotki.yandex.ru
-  - dns.yandex.ru
-  - dns.yandex.ua
-  - browser.yandex.ru
-  - browser.yandex.ua
-  - speechkit.yandex.ru
-  - xml.yandex.ru
-  - xml.yandex.ua
-  - yandexdatafactory.com
-  - zno.yandex.ua
-  - passport.yandex.ua
