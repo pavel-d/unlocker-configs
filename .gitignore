@@ -1,3 +1,4 @@
+.DS_Store
 dump.csv
 config/smart-proxy/settings.yml
 config/bind/zones.override
