@@ -4,6 +4,9 @@ proxy_hosts:
   - kaspersky.ua
   - drweb.ru
   - mail.ru
+  - imgsmail.ru
+  - mradx.net
+  - 2ch.hk
   - vk.com
   - ok.ru
   - yandex.ru
