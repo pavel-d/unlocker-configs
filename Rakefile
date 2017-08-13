@@ -1,7 +1,7 @@
 require 'erb'
 require 'yaml'
 
-DYMAMIC_CONFIGS = %w(config/smart-proxy/settings.yml config/bind/zones.override)
+DYMAMIC_CONFIGS = %w(config/sniproxy/sniproxy.conf config/bind/zones.override)
 
 task :render_config do
   @host_names = YAML.load(File.read('./config/settings.yml'))['proxy_hosts'].uniq!
