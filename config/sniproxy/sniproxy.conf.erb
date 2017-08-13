@@ -8,7 +8,8 @@ user daemon
 pidfile /var/run/sniproxy.pid
 
 error_log {
-    filename /var/log/sniproxy/errors.log
+    syslog daemon
+    priority notice
 }
 
 listen 80 {
@@ -19,7 +20,7 @@ listen 80 {
 
     access_log {
         filename /var/log/sniproxy/http.log
-        priority debug
+        priority notice
     }
 }
 
@@ -28,28 +29,28 @@ listen 443 {
     table https_hosts
 
     access_log {
-        filename /var/log/sniproxy/http.log
-        priority debug
+        filename /var/log/sniproxy/https.log
+        priority notice
     }
 }
 
 # named tables are defined with the table directive
 table http_hosts {
-<% @host_names.each do |host_name| %>
-<%= host_name %> *
-<% end %>
+    <% @host_names.each do |host_name| %>
+    <%= host_name %> *
+    <% end %>
 }
 
 # named tables are defined with the table directive
 table https_hosts {
-<% @host_names.each do |host_name| %>
-<%= host_name %> *
-<% end %>
+    <% @host_names.each do |host_name| %>
+    <%= host_name %> *
+    <% end %>
 }
 
 # if no table specified the default 'default' table is defined
 table {
-<% @host_names.each do |host_name| %>
-<%= host_name %> *
-<% end %>
+    <% @host_names.each do |host_name| %>
+    <%= host_name %> *
+    <% end %>
 }

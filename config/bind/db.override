@@ -13,8 +13,8 @@ $TTL  86400
 ; need atleast a nameserver
    IN  NS ns1
 ; specify nameserver IP address
-ns1 IN  A   46.101.255.49                ; external IP from venet0:0
+ns1 IN  A   138.197.178.66                ; external IP from venet0:0
 ; provide IP address for domain itself
-@   IN  A   46.101.255.49                ; external IP from venet0:0
+@   IN  A   138.197.178.66                ; external IP from venet0:0
 ; resolve everything with the same IP address as ns1
-*   IN  A   46.101.255.49            ; external IP from venet0:0
+*   IN  A   138.197.178.66            ; external IP from venet0:0
