@@ -14,6 +14,7 @@ proxy_hosts:
   - ok.ru
   - ok.com
   - mycdn.me
+  - ya.ru
   - yandex.ru
   - yandex.ua
   - yandex.net
