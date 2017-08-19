@@ -1,16 +1,13 @@
 listeners:
-  - https: true
-    bind_addr: ":443"
   - bind_addr: ":80"
+  - bind_addr: ":443"
+    https: true
 
-frontends:
+default_upstream:
+  - localhost
+
+
+upstreams:
 <% @host_names.each do |host_name| %>
-  <%= host_name %>:
-    backends:
-      - addr: "<%= host_name %>"
+  - "<%= host_name %>"
 <% end %>
-
-  46.101.255.49:
-    backends:
-      - addr: "127.0.0.1"
-    default: true

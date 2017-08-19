@@ -38,11 +38,11 @@ task :render_config do
 end
 
 task :link_config do
-  command 'cp config/sniproxy/* /etc/'
+  command 'cp config/sniproxy/* /srv/smart-proxy/'
   command 'cp config/bind/* /etc/bind/'
 end
 
 task :restart do
-  command 'killall -HUP sniproxy'
+  command 'service smart-proxy restart'
   command 'service bind9 reload'
 end
